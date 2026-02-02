@@ -15,15 +15,15 @@ public class max_min_array {
             max=arr[i];
 
             }
-        }System.out.println(max);
-        int count=0;
-        for (int i=0; i<arr.length;i++){
-            if (arr[i]<max){
-                count=count+1;
-            }
         }
-        System.out.println(count);
+        int time=0;
+        for(int i=0;i< arr.length;i++){
+            time+= max-arr[i];
+        }
+        System.out.println(time);
     }
 }
 
+//observation= to minimize time make all elements equal to the max element in the arr
+//approach= 1.find max in arr 2. for every element calculate how much it needs to be increased to reach the maximum 3.sum all those differnces
 

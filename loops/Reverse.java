@@ -2,17 +2,20 @@ package loops;
 import java.util.Scanner;
 public class Reverse {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int n= sc.nextInt();
-        int Reversed=0;
-        for (; n!=0;)
-        {
-            int num= n%10;
-            n/=10;
-
-            Reversed=Reversed*10+num;
+        int arr[]={1,2,3,4,5,6,7,8,9};
+        int start=0;
+        int end=arr.length-1;
+        int temp=0;
+        for(int i =0;i<arr.length/2;i++){
+            temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;
         }
-        System.out.println(Reversed);
+        for (int i=0; i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
     }
 
     
