@@ -27,3 +27,4 @@ public class max_min_array {
 //observation= to minimize time make all elements equal to the max element in the arr
 //approach= 1.find max in arr 2. for every element calculate how much it needs to be increased to reach the maximum 3.sum all those differnces
 
+// iven an array of integers a , find and return the product array of same size where the i'th element of the product array will be equals to the product of all elements divided by the i'th element of the array
